@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { InitialStateProps } from "./types"
 
 const initialState: InitialStateProps = {
-    appName: "React App"
+    appName: "Editor App"
 }
 
 const appSlice = createSlice({
