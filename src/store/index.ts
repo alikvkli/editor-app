@@ -3,13 +3,17 @@ import { persistStore, persistReducer } from 'redux-persist';
 import { encryptTransform } from 'redux-persist-transform-encrypt';
 import storage from 'redux-persist/lib/storage/session';
 import app from "../features/app";
+import auth from "../features/auth";
+import message from "../features/message";
 
 const encryptor = encryptTransform({
     secretKey: 'hVmYq3t6w9y$B&E)H@McQfTjWnZr4u7x'
 });
 
 const reducers = combineReducers({
-    app
+    app,
+    auth,
+    message
 });
 
 const persistConfig = {

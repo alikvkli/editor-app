@@ -1,3 +1,3 @@
 export interface InitialStateProps{
-    appName: string
+    appName: string;
 }
